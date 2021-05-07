@@ -6,13 +6,6 @@
   <ul class="nav nav-pills">
     <li class="nav-item"><a href="/home" class="nav-link">Accueil</a></li>
     <li class="nav-item"><a href="/about" class="nav-link">À propos</a></li>
-    <% if account_signed_in? %>
-            <%= button_to 'Se déconnecter', destroy_account_session_path, method: :delete %>
-          
-            <% else %>
-            <%= link_to 'Se connecter', new_account_session_path %>
-          
-            <% end %>
   </ul>
 </header>
 </div>

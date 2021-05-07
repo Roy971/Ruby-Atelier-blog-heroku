@@ -19,8 +19,14 @@
 
 
   <p> 
-  <a href="<%= posts_path %>" class="btn btn-primary"> Découvrir les articles</a>
+  <a href="<%= posts_path %>" class="btn btn-primary">Découvrir les articles</a>
   </p>
+  <p>  <% if account_signed_in? %>
+  <%= button_to 'Se déconnecter', destroy_account_session_path, method: :delete %>
+
+  <% else %>
+  <%= link_to 'Se connecter', new_account_session_path %>
+  <% end %> </p>
   
 
 

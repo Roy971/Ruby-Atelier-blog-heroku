@@ -3,10 +3,10 @@
     
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h1 class="display-4 fw-normal"> Articles Récents </h1>
-          <p class="fs-5 text-muted"> Rome ne sest pas fait en un jour ! </p>
+          <p class="fs-5 text-muted"> Rome ne s'est pas fait en un jour ! </p>
           <p>Découvrez de nouveaux articles prochainement !</p>
         
-        
+        <br>
           <% @posts.each do |post|  %>
             <p><h2><%= post.title %></h2><p>
             <p> <%= post.content %></p>
