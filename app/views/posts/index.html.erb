@@ -1,52 +1,23 @@
 <body>
+  <div class="container py-3">
     
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="check" viewBox="0 0 16 16">
-    <title>Check</title>
-    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
-  </symbol>
-</svg>
-
-<div class="container py-3">
-  <header>
-    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-       </a>
-
-      
-    </div>
-
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal"> Articles Récents </h1>
-      <p class="fs-5 text-muted">Rome ne s'est pas fait en un jour ! 
-      Découvrez de nouveaux articles prochainement !</p>
-    </div>
-  </header>
-
-  <main>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-
-
-<% @posts.each do |post|  %>
-
-<h2><%= post.title %></h2>
-
-<p> <%= post.content %></p>
-
-<p>
-<a href="/art1" class="btn btn-primary">Lire la suite</a>
-
-
-</p>
-    <% end %>
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 class="display-4 fw-normal"> Articles Récents </h1>
+          <p class="fs-5 text-muted"> Rome ne sest pas fait en un jour ! </p>
+          <p>Découvrez de nouveaux articles prochainement !</p>
         
+        
+          <% @posts.each do |post|  %>
+            <p><h2><%= post.title %></h2><p>
+            <p> <%= post.content %></p>
+            <a href="/art1" class="btn btn-primary"> Lire la suite </a>
+          <% end %>
+    
+        </div>
 
+       
 
-  
-
+  </div>
 </body>
 
 
