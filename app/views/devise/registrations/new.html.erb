@@ -31,6 +31,11 @@
     <%= f.email_field :email, autocomplete: "email" %>
   </div>
 
+  <div class="field" style:"text-align:center">
+    <%= f.label :username %><br />
+    <%= f.text_field :username%>
+  </div>
+
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
