@@ -15,8 +15,10 @@ def update
   @post = Post.find(params[:id])
 
   puts params.inspect
-
-
 end 
+
+def new
+end
+
 
 end
