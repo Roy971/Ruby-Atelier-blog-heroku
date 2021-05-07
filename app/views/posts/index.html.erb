@@ -9,7 +9,7 @@
           <% @posts.each do |post|  %>
             <p><h2><%= post.title %></h2><p>
             <p> <%= post.content %></p>
-            <a href="/art1" class="btn btn-primary"> Lire la suite </a>
+            <%= link_to "Lire la suite", art1_path, class: "btn btn-primary" %>
           <% end %>
     
         </div>
